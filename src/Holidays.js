@@ -3,7 +3,7 @@
  * @license ISC
  */
 
-import HolidaysParser from 'date-holidays-parser'
+import HolidaysParser from '@adclear-ai/date-holidays-parser'
 
 import { data } from './data.js'
 

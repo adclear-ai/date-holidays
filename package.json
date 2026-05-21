@@ -1,5 +1,5 @@
 {
-  "name": "date-holidays",
+  "name": "@adclear-ai/date-holidays",
   "version": "3.30.1",
   "description": "worldwide holidays",
   "keywords": [
@@ -263,8 +263,11 @@
     "colors": true,
     "reporter": "dot"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "date-holidays-parser": "^3.4.7",
+    "@adclear-ai/date-holidays-parser": "^3.4.7",
     "js-yaml": "^4.1.1",
     "lodash": "^4.18.1",
     "prepin": "^1.0.3"
