@@ -8,6 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: read
       packages: write
@@ -20,7 +21,7 @@ jobs:
           scope: '@adclear-ai'
       - run: npm install
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.ORG_PACKAGE_READ_TOKEN || secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.ORG_PACKAGE_READ_TOKEN }}
       - run: npm run build
       - run: npm publish --ignore-scripts
         env:
