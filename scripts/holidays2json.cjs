@@ -11,7 +11,7 @@ const { pick: _pick, omit: _omit } = require('lodash')
 
 const REGEX = /^([A-Z]+)\.yaml$/
 
-const dirParser = path.dirname(require.resolve('date-holidays-parser'))
+const dirParser = path.dirname(require.resolve('@adclear-ai/date-holidays-parser'))
 
 const config = {
   dirname: resolve(__dirname, '..', 'data'),
